@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="car1" class="by.itclass._02_car.entities.SimpleCar"/>
+
+    <bean name="car2" class="by.itclass._02_car.entities.SimpleCar">
+        <constructor-arg value="Mazda CX-5"/>
+    </bean>
+
+    <bean name="car3" class="by.itclass._02_car.entities.SimpleCar">
+        <property name="id" value="1"/>
+    </bean>
+
+    <bean name="car4" class="by.itclass._02_car.entities.SimpleCar">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="model" value="Mazda 323 FBA"/>
+    </bean>
+
+    <bean name="car5" class="by.itclass._02_car.entities.SimpleCar">
+        <constructor-arg index="0" value="3"/>
+        <constructor-arg index="1" value="Mazda 6"/>
+    </bean>
+</beans>
