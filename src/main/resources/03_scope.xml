@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="by.itclass._02_car.entities.SimpleCar" scope="prototype"/>
+
+    <bean name="engine" class="by.itclass._02_car.entities.Engine">
+        <constructor-arg value="Diesel"/>
+    </bean>
+
+    <bean name="complexCar" class="by.itclass._02_car.entities.ComplexCar" autowire="byName"/>
+
+</beans>

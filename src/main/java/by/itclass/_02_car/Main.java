@@ -1,5 +1,6 @@
 package by.itclass._02_car;
 
+import by.itclass._02_car.entities.ComplexCar;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
@@ -15,5 +16,7 @@ public class Main {
                 ctx.getBean("car5")
         );
         cars.forEach(System.out::println);
+
+        System.out.println(ctx.getBean("car6", ComplexCar.class));
     }
 }

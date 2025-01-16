@@ -22,4 +22,18 @@
         <constructor-arg index="0" value="3"/>
         <constructor-arg index="1" value="Mazda 6"/>
     </bean>
+
+    <bean name="engine-electro" class="by.itclass._02_car.entities.Engine">
+        <constructor-arg value="Electro"/>
+    </bean>
+
+    <bean name="engine-diesel" class="by.itclass._02_car.entities.Engine">
+        <constructor-arg value="Diesel"/>
+    </bean>
+
+    <bean name="car6" class="by.itclass._02_car.entities.ComplexCar">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="model" value="Tesla"/>
+        <constructor-arg name="engine" ref="engine-diesel"/>
+    </bean>
 </beans>
